@@ -17,4 +17,13 @@ const result=() =>{
 }
 const clearScreen = () => {
     input_screen.value = ""
+    output_screen.value = ""
+}
+
+
+const back = () => {
+    let present_value = input_screen.value;
+
+    input_screen.value = present_value.slice(0,-1);
+
 }
