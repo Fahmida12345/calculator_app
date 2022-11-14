@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: cursive;
 }
 body{
     background: linear-gradient(90deg, rgba(246,123,226,1) 0%, rgba(179,66,184,1) 25%, rgba(236,11,151,1) 50%, rgba(198,10,67,1) 73%, rgba(210,30,103,1) 100%);
@@ -91,4 +92,36 @@ body{
 }
 .number_pad ul:nth-child(5) li:nth-child(3){
     position: relative;
+}
+
+.footer{
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    display: none;
+}
+
+
+footer{
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .footer{
+        display: block;
+    }
+    
+    
+    footer{
+        display: none;
+    }
 }
