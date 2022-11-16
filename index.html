@@ -1,55 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="frame">
-<div class="display">
-      <input type="text" name="" id="input_screen" readonly>
-      <input type="text" name="" id="output_screen" readonly>
-</div>
-<div class="number_pad">
- <ul> 
-    <li><button onclick="clearScreen()">AC</button></li>
-    <li><button onclick="back()"><i class="fa-solid fa-delete-left"></i></button></li>
-    <li><button onclick="digit('/')">/</button></li>
-    <li><button onclick="digit('*')">*</button></li>
-</ul>
-
-<ul> 
-    <li><button onclick="digit('7')">7</button></li>
-    <li><button onclick="digit('8')">8</button></li>
-    <li><button onclick="digit('9')">9</button></li>
-    <li><button onclick="digit('-')">-</button></li>
-</ul>
-<ul> 
-    <li><button onclick="digit('4')">4</button></li>
-    <li><button onclick="digit('5')">5</button></li>
-    <li><button onclick="digit('6')">6</button></li>
-    <li><button onclick="digit('+')">+</button></li>
-</ul>
-<ul> 
-    <li><button onclick="digit('1')">1</button></li>
-    <li><button onclick="digit('2')">2</button></li>
-    <li><button onclick="digit('3')">3</button></li>
-</ul>
-
-<ul> 
-    <li><button onclick="digit('0')">0</button></li>
-    <li><button onclick="digit('.')">.</button></li>
-    <li><button onclick="result()">=</button></li>
-</ul>
-
+      <div class="display">
+        <input type="text" name="" id="input_screen" readonly />
+        <input type="text" name="" id="output_screen" readonly />
       </div>
-</div>
-    
-<script src="./main.js"></script>
-</body>
+      <div class="number_pad">
+        <ul>
+          <li><button onclick="clearScreen()">AC</button></li>
+          <li>
+            <button onclick="back()">
+              <i class="fa-solid fa-delete-left"></i>
+            </button>
+          </li>
+          <li><button onclick="digit('/')">/</button></li>
+          <li><button onclick="digit('*')">*</button></li>
+        </ul>
+
+        <ul>
+          <li><button onclick="digit('7')">7</button></li>
+          <li><button onclick="digit('8')">8</button></li>
+          <li><button onclick="digit('9')">9</button></li>
+          <li><button onclick="digit('-')">-</button></li>
+        </ul>
+        <ul>
+          <li><button onclick="digit('4')">4</button></li>
+          <li><button onclick="digit('5')">5</button></li>
+          <li><button onclick="digit('6')">6</button></li>
+          <li><button onclick="digit('+')">+</button></li>
+        </ul>
+        <ul>
+          <li><button onclick="digit('1')">1</button></li>
+          <li><button onclick="digit('2')">2</button></li>
+          <li><button onclick="digit('3')">3</button></li>
+        </ul>
+
+        <ul>
+          <li><button onclick="digit('0')">0</button></li>
+          <li><button onclick="digit('.')">.</button></li>
+          <li><button onclick="result()">=</button></li>
+        </ul>
+      </div>
+
+      <p class="footer">&copy; 2022 Fahmida Yeasmin. All Rights Resurved.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2022 Fahmida Yeasmin. All Rights Resurved.</p></p>
+    </footer>
+
+
+    <script src="./main.js"></script>
+  </body>
 </html>
